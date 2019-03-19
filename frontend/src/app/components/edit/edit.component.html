@@ -1,0 +1,21 @@
+<div *ngIf="user">
+  <label>First Name:
+    <input type="text" [(ngModel)]="user.firstname">
+  </label>
+</div>
+<div>
+  <label>Last Name:
+    <input type="text" [(ngModel)]="user.lastname">
+  </label>
+</div>
+<div>
+  <label>Email:
+    <input type="text" [(ngModel)]="user.email">
+  </label>
+</div>
+
+<div>
+  <label>
+    <button (click)="saveUser(user)">Save Changes</button>
+  </label>
+</div>
